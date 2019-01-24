@@ -3,6 +3,7 @@ Openai_baselines_UR5_DRL_training Issue with attribute error as description in b
 
 2019-01-24 10:21:38.551305: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA<br>
 Creating a DDPG agent with action space 4 x [0.15       0.05       0.26179939 0.26179939]...<br>
+<p style="color:red;">
 Traceback (most recent call last):<br>
   File "/home/huong/catkin_ws/src/ur_gazebo_test2/experiment/train.py", line 224, in <module><br>
     main()<br>
@@ -28,4 +29,5 @@ Traceback (most recent call last):<br>
 AttributeError: 'function' object has no attribute 'reset'<br>
 <br>
 Process finished with exit code 1<br>
+  </p>
 
