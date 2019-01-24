@@ -1,0 +1,135 @@
+/home/huong/env_tensorflow/bin/python /home/huong/catkin_ws/src/ur_gazebo_test2/experiment/train.py
+Logging to /tmp/openai-2019-01-24-10-21-33-943060
+Logging to ./training_results43/
+/home/huong/env_tensorflow/lib/python3.5/site-packages/gym/envs/registration.py:14: PkgResourcesDeprecationWarning: Parameters to load are deprecated.  Call .resolve and .require separately.
+  result = entry_point.load(False)
+[ERROR] [1548292897.455934, 0.000000]: WORLD RESET
+[WARN] [1548292897.458041, 0.000000]: Initialising Simulation Physics Parameters
+[WARN] [1548292897.460249, 0.000000]: Start Init ControllersConnection
+[WARN] [1548292897.460409, 0.000000]: END Init ControllersConnection
+[INFO] [1548292897.481456, 872.687000]: all check done. PAUSE
+[INFO] [1548292897.720538, 873.999000]: movement setup done.
+[INFO] [1548292897.905484, 875.044000]: set model_state available
+[INFO] [1548292897.945940, 875.233000]: state_result: 0
+[INFO] [1548292897.947720, 875.242000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292897.964097, 875.333000]: state_result: 5
+[INFO] [1548292897.964538, 875.335000]: [Result] State: 5
+[ERROR] [1548292897.968326, 875.353000]: WORLD RESET
+[INFO] [1548292897.974050, 875.358000]: set model_state for my_object available
+[INFO] [1548292897.976170, 875.369000]: init object done
+[INFO] [1548292897.977611, 875.378000]: set model_state for my_target available
+[INFO] [1548292897.989964, 875.448000]: init target done
+T: 1
+_Q_lr: 0.001
+_action_l2: 1.0
+_batch_size: 768
+_bias_u: [0.2 0.1 0.  0. ]
+_buffer_size: 1000000
+_clip_obs: 200.0
+_hidden: 256
+_layers: 3
+_max_u: [0.15       0.05       0.26179939 0.26179939]
+_min_u: [-0.15       -0.05       -0.26179939 -0.26179939]
+_network_class: baselines.her.actor_critic:ActorCritic
+_norm_clip: 5
+_norm_eps: 0.01
+_pi_lr: 0.001
+_polyak: 0.95
+_relative_goals: False
+_scope: ddpg
+aux_loss_weight: 0.0078
+bc_loss: 0
+ddpg_params: {'hidden': 256, 'polyak': 0.95, 'action_l2': 1.0, 'buffer_size': 1000000, 'Q_lr': 0.001, 'pi_lr': 0.001, 'relative_goals': False, 'bias_u': array([0.2, 0.1, 0. , 0. ]), 'max_u': array([0.15      , 0.05      , 0.26179939, 0.26179939]), 'network_class': 'baselines.her.actor_critic:ActorCritic', 'norm_clip': 5, 'norm_eps': 0.01, 'scope': 'ddpg', 'layers': 3, 'batch_size': 768, 'clip_obs': 200.0, 'min_u': array([-0.15      , -0.05      , -0.26179939, -0.26179939])}
+demo_batch_size: 128
+env_name: UR5Slide-v1
+gamma: 0.0
+make_env: <function prepare_params.<locals>.make_env at 0x7f4fd99d4400>
+n_batches: 20
+n_cycles: 50
+n_test_rollouts: 10
+noise_eps: 0.02
+num_demo: 100
+prm_loss_weight: 0.001
+q_filter: 0
+random_eps: 0.3
+replay_k: 4
+replay_strategy: future
+rollout_batch_size: 10
+test_with_polyak: False
+
+*** Warning ***
+You are running HER with just a single MPI worker. This will work, but the experiments that we report in Plappert et al. (2018, https://arxiv.org/abs/1802.09464) were obtained with --num_cpu 19. This makes a significant difference and if you are looking to reproduce those results, be aware of this. Please also refer to https://github.com/openai/baselines/issues/314 for further details.
+****************
+
+[INFO] [1548292898.017896, 875.591000]: INIT CONFIGURE_DIMS
+[INFO] [1548292898.055058, 875.769000]: state_result: 0
+[INFO] [1548292898.056178, 875.774000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.076430, 875.869000]: state_result: 5
+[INFO] [1548292898.077211, 875.872000]: [Result] State: 5
+[ERROR] [1548292898.081134, 875.887000]: WORLD RESET
+[INFO] [1548292898.086404, 875.893000]: set model_state for my_object available
+[INFO] [1548292898.089093, 875.904000]: init object done
+[INFO] [1548292898.091205, 875.914000]: set model_state for my_target available
+[INFO] [1548292898.093054, 875.922000]: init target done
+[INFO] [1548292898.128355, 876.053000]: state_result: 0
+[INFO] [1548292898.128735, 876.054000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.153231, 876.161000]: state_result: 5
+[INFO] [1548292898.153632, 876.165000]: [Result] State: 5
+[INFO] [1548292898.153931, 876.166000]: prepared to action
+[INFO] [1548292898.171331, 876.226000]: state_result: 0
+[INFO] [1548292898.172025, 876.228000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.199061, 876.326000]: state_result: 5
+[INFO] [1548292898.199374, 876.326000]: [Result] State: 5
+[INFO] [1548292898.214029, 876.380000]: state_result: 0
+[INFO] [1548292898.214652, 876.381000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.238785, 876.480000]: state_result: 5
+[INFO] [1548292898.239321, 876.482000]: [Result] State: 5
+distance: 1.0862200945214358
+[INFO] [1548292898.243502, 876.501000]: DONE CONFIGURE_DIMS
+[INFO] [1548292898.243760, 876.501000]: INIT CONFIGURE DDPG
+[INFO] [1548292898.352677, 877.030000]: state_result: 0
+[INFO] [1548292898.353543, 877.031000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.377392, 877.130000]: state_result: 5
+[INFO] [1548292898.377792, 877.130000]: [Result] State: 5
+[ERROR] [1548292898.383087, 877.150000]: WORLD RESET
+[INFO] [1548292898.387786, 877.155000]: set model_state for my_object available
+[INFO] [1548292898.389622, 877.160000]: init object done
+[INFO] [1548292898.394431, 877.183000]: set model_state for my_target available
+[INFO] [1548292898.396498, 877.192000]: init target done
+[INFO] [1548292898.472573, 877.563000]: state_result: 0
+[INFO] [1548292898.473748, 877.576000]: Doing stuff while waiting for the Server to give a result...
+[INFO] [1548292898.490784, 877.663000]: state_result: 5
+[INFO] [1548292898.491742, 877.665000]: [Result] State: 5
+[ERROR] [1548292898.495749, 877.687000]: WORLD RESET
+[INFO] [1548292898.502331, 877.697000]: set model_state for my_object available
+[INFO] [1548292898.518420, 877.779000]: init object done
+[INFO] [1548292898.520386, 877.789000]: set model_state for my_target available
+[INFO] [1548292898.522245, 877.798000]: init target done
+2019-01-24 10:21:38.551305: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Creating a DDPG agent with action space 4 x [0.15       0.05       0.26179939 0.26179939]...
+Traceback (most recent call last):
+  File "/home/huong/catkin_ws/src/ur_gazebo_test2/experiment/train.py", line 224, in <module>
+    main()
+  File "/home/huong/env_tensorflow/lib/python3.5/site-packages/click/core.py", line 764, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/huong/env_tensorflow/lib/python3.5/site-packages/click/core.py", line 717, in main
+[INFO] [1548292899.141068, 877.931000]: DONE CONFIGURE DDPG
+    rv = self.invoke(ctx)
+  File "/home/huong/env_tensorflow/lib/python3.5/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/huong/env_tensorflow/lib/python3.5/site-packages/click/core.py", line 555, in invoke
+    return callback(*args, **kwargs)
+  File "/home/huong/catkin_ws/src/ur_gazebo_test2/experiment/train.py", line 220, in main
+    launch(**kwargs)
+  File "/home/huong/catkin_ws/src/ur_gazebo_test2/experiment/train.py", line 194, in launch
+    rollout_worker = RolloutWorker(params['make_env'], policy, dims, logger, **rollout_params)
+  File "/home/huong/baselines/baselines/her/util.py", line 36, in wrapper
+    return method(*positional_args, **keyword_args)
+  File "/home/huong/baselines/baselines/her/rollout.py", line 42, in __init__
+    self.reset_all_rollouts()
+  File "/home/huong/baselines/baselines/her/rollout.py", line 46, in reset_all_rollouts
+    self.obs_dict = self.venv.reset()
+AttributeError: 'function' object has no attribute 'reset'
+
+Process finished with exit code 1
+
